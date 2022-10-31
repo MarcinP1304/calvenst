@@ -1,0 +1,12 @@
+version: 2.1
+
+orbs:
+  python: travelaudience/python@1.1.2
+
+workflows:
+  main:
+    jobs:
+      - ta-python/pylint
+      - ta-python/flake8
+      - ta-python/mypy_type_check
+
