@@ -7,3 +7,7 @@ workflows:
   main:
     jobs:
       - ta-python/flake8
+      - ta-python/test:
+          ci_requirements: ''
+          install_pytest: true
+          with_coverage: false
