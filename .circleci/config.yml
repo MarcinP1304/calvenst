@@ -6,5 +6,4 @@ orbs:
 workflows:
   main:
     jobs:
-      - ta-python/pylint
       - ta-python/flake8
